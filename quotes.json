@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-06-16T21:23:00.998297+00:00",
+ "generated_at": "2026-06-16T21:24:16.593445+00:00",
  "quotes": [
   {
    "ticker": "ABUS",
@@ -70,6 +70,16 @@
    "currency": "USD",
    "market_time": 1781640003,
    "name": "Aramark"
+  },
+  {
+   "ticker": "AVBP",
+   "price": 30.33,
+   "change": -0.22,
+   "change_pct": -0.72,
+   "prev_close": 30.55,
+   "currency": "USD",
+   "market_time": 1781640001,
+   "name": "Arrivent Biopharma, Inc."
   },
   {
    "ticker": "AVTR",
