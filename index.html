@@ -7,7 +7,7 @@
   <title>Busy Biz</title>
   <style>
     :root{
-      --bg:#0a0e14; --panel:#0f1620; --panel2:#11161f; --border:#1c2530; --line:#2a3442;
+      --bg:#0a0e14; --panel:#0f1620; --border:#1c2530; --line:#2a3442;
       --text:#e6edf3; --muted:#7a8699; --accent:#26d07c; --accent2:#f0b90b; --down:#f6465d;
       --mono:ui-monospace,SFMono-Regular,"SF Mono",Menlo,Consolas,monospace;
     }
@@ -27,28 +27,29 @@
     .sb-spacer{flex:1;}
     #clock{color:var(--text);font-variant-numeric:tabular-nums;}
     .sb-mut{display:none;}
-    @media(min-width:560px){.sb-mut{display:inline;}}
-    /* ticker tape */
-    #ticker{overflow:hidden;white-space:nowrap;background:#080d13;
-      border-bottom:1px solid var(--border);}
-    .tk-track{display:inline-block;padding:9px 0;animation:scroll 95s linear infinite;
+    @media(min-width:620px){.sb-mut{display:inline;}}
+    /* quote tape */
+    #ticker{overflow:hidden;white-space:nowrap;background:#080d13;border-bottom:1px solid var(--border);}
+    .tk-track{display:inline-block;padding:9px 0;animation:scroll 175s linear infinite;
       font-family:var(--mono);font-size:13px;}
     #ticker:hover .tk-track{animation-play-state:paused;}
-    .tk-track a{color:var(--text);text-decoration:none;}
-    .tk-track a b{color:var(--accent);}
-    .tk-track a:hover{color:var(--accent2);}
-    .tk-track .sep{color:var(--line);margin:0 16px;}
+    .tk-track .q b{color:var(--text);font-weight:700;}
+    .tk-track .q .px{color:var(--muted);margin:0 6px;}
+    .q-up{color:var(--accent);}
+    .q-down{color:var(--down);}
+    .q-flat{color:var(--muted);}
+    .tk-upd{color:var(--accent2);font-weight:700;letter-spacing:.5px;}
+    .tk-track .sep{color:var(--line);margin:0 14px;}
     @keyframes scroll{from{transform:translateX(0);}to{transform:translateX(-50%);}}
     /* layout */
-    .wrap{max-width:1060px;margin:0 auto;padding:40px 24px 64px;}
-    header{margin-bottom:26px;}
-    h1{margin:0;font-size:clamp(36px,8vw,62px);font-weight:800;letter-spacing:2px;
-      background:linear-gradient(90deg,var(--text) 30%,var(--accent));
-      -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;}
-    .tagline{color:var(--muted);font-size:clamp(15px,2.5vw,18px);margin-top:6px;letter-spacing:.3px;}
+    .wrap{max-width:1060px;margin:0 auto;padding:38px 24px 64px;}
+    header{margin-bottom:24px;}
+    h1{margin:0;font-size:clamp(34px,7vw,58px);font-weight:800;letter-spacing:.5px;color:#ffffff;}
+    .subhead{color:var(--muted);font-size:13.5px;margin-top:8px;font-family:var(--mono);}
+    .subhead .tag{color:var(--accent2);}
     /* featured */
     .featured{background:linear-gradient(135deg,#101824,#0b1119);border:1px solid var(--border);
-      border-radius:12px;padding:20px 24px;margin:0 0 30px;min-height:104px;
+      border-radius:12px;padding:20px 24px;margin:22px 0 30px;min-height:104px;
       box-shadow:0 1px 0 rgba(38,208,124,.15) inset;}
     .featured .flabel{font-size:11px;letter-spacing:2px;color:var(--accent);font-weight:700;
       margin-bottom:12px;display:flex;align-items:center;gap:8px;}
@@ -75,10 +76,9 @@
     .teaser .big{color:var(--accent);font-weight:700;font-size:15px;}
     .open{color:var(--accent);font-weight:700;font-size:13.5px;}
     .ext{color:var(--muted);font-size:11px;margin-left:5px;vertical-align:super;}
-    footer{margin-top:46px;padding-top:22px;border-top:1px solid var(--border);
-      color:var(--muted);font-size:12.5px;}
+    footer{margin-top:46px;padding-top:22px;border-top:1px solid var(--border);color:var(--muted);font-size:12.5px;}
     footer .src{color:var(--accent2);font-weight:600;}
-    @media(max-width:480px){.wrap{padding:28px 16px 48px;}}
+    @media(max-width:480px){.wrap{padding:26px 16px 48px;}}
   </style>
 </head>
 <body>
@@ -123,12 +123,12 @@ if (sessionStorage.getItem('busybiz_auth')==='1') {
     <span class="sb-spacer"></span>
     <span id="clock">--:--:-- ET</span>
   </div>
-  <div id="ticker"><div class="tk-track">Loading the wire&hellip;</div></div>
+  <div id="ticker"><div class="tk-track">Loading quotes&hellip;</div></div>
 
   <div class="wrap">
     <header>
-      <h1>BUSY BIZ</h1>
-      <div class="tagline">Tools to keep biz busy</div>
+      <h1>Keeping Biz Busy</h1>
+      <div class="subhead"><span class="tag">DELAYED</span> quotes for ~110 Philadelphia-region public companies &middot; headlines &amp; filings below</div>
     </header>
 
     <section class="featured" aria-label="Latest headline from the wire">
@@ -169,11 +169,12 @@ if (sessionStorage.getItem('busybiz_auth')==='1') {
 
     <footer>
       <p class="src">These are working tools, not finished reporting &mdash; always check the source material before publishing.</p>
-      <p>Live wire &amp; counts pull from the earnings and bankruptcy trackers, which refresh on their own schedules. Built Jun 16, 2026.</p>
+      <p>Stock quotes are <strong>delayed</strong> and refreshed periodically; the tape shows how long since the last update. Wire &amp; filing counts pull from the earnings and bankruptcy trackers, which refresh on their own schedules. Built Jun 16, 2026.</p>
     </footer>
   </div>
 
 <script>
+  var QUOTES_URL = 'quotes.json';
   var NEWS_URL = 'https://abgutman.github.io/earnings-tracker/earnings_data/news_feed.json';
   var BK_URL   = 'https://abgutman.github.io/bankruptcy-tracker/bankruptcy_data/cases.json';
 
@@ -184,6 +185,12 @@ if (sessionStorage.getItem('busybiz_auth')==='1') {
     if(s<3600)return Math.max(1,Math.floor(s/60))+'m';
     if(s<86400)return Math.floor(s/3600)+'h';
     return Math.floor(s/86400)+'d';}
+  function minsAgo(iso){var s=(Date.now()-new Date(iso).getTime())/60000;
+    if(!isFinite(s)||s<0)return'just now';
+    var m=Math.round(s);
+    if(m<1)return'just now';
+    if(m<60)return m+'m ago';
+    return Math.floor(m/60)+'h '+(m%60)+'m ago';}
 
   function tick(){
     var o={timeZone:'America/New_York',hour:'2-digit',minute:'2-digit',second:'2-digit',hour12:false};
@@ -192,6 +199,29 @@ if (sessionStorage.getItem('busybiz_auth')==='1') {
   }
   setInterval(tick,1000); tick();
 
+  /* ---- delayed quote tape ---- */
+  fetch(QUOTES_URL).then(function(r){return r.json();}).then(function(d){
+    var qs=d.quotes||[]; if(!qs.length)throw 0;
+    var upd=minsAgo(d.generated_at);
+    var parts=[];
+    qs.forEach(function(q,i){
+      var cls=q.change>0?'q-up':(q.change<0?'q-down':'q-flat');
+      var arr=q.change>0?'▲':(q.change<0?'▼':'▬');
+      var sign=q.change>0?'+':'';
+      parts.push('<span class="q"><b>'+esc(q.ticker)+'</b> <span class="px">'+
+        Number(q.price).toFixed(2)+'</span> <span class="'+cls+'">'+arr+' '+
+        sign+Number(q.change).toFixed(2)+' ('+sign+Number(q.change_pct).toFixed(2)+'%)</span></span>');
+      if((i+1)%10===0) parts.push('<span class="tk-upd">● UPDATED '+upd+'</span>');
+    });
+    parts.push('<span class="tk-upd">● UPDATED '+upd+'</span>');
+    var strip=parts.join('<span class="sep">│</span>');
+    document.getElementById('ticker').innerHTML=
+      '<div class="tk-track">'+strip+'<span class="sep">│</span>'+strip+'</div>';
+  }).catch(function(){
+    document.getElementById('ticker').innerHTML='<div class="tk-track">Quotes unavailable &mdash; see the dashboards for the latest.</div>';
+  });
+
+  /* ---- rotating featured headline + news teaser ---- */
   var featured=[], fi=0;
   function renderFeatured(){
     var it=featured[fi]; if(!it)return;
@@ -204,25 +234,18 @@ if (sessionStorage.getItem('busybiz_auth')==='1') {
       el.style.opacity=1;
     },240);
   }
-
   fetch(NEWS_URL).then(function(r){return r.json();}).then(function(d){
     var items=(d.items||[]).slice().sort(function(a,b){return Number(b.published_unix)-Number(a.published_unix);});
     if(!items.length)throw 0;
-    var strip=items.slice(0,30).map(function(it){
-      return '<a href="'+esc(it.link)+'" target="_blank" rel="noopener"><b>'+
-        esc(sym(it.tickers)||it.company)+'</b> '+esc(it.title)+'</a>';
-    }).join('<span class="sep">&#9670;</span>');
-    document.getElementById('ticker').innerHTML=
-      '<div class="tk-track">'+strip+'<span class="sep">&#9670;</span>'+strip+'</div>';
     featured=items.slice(0,10); fi=0; renderFeatured();
     setInterval(function(){fi=(fi+1)%featured.length;renderFeatured();},4500);
     var t=document.getElementById('teaser-news');
     if(t)t.innerHTML='<span class="big">'+items.length+'</span> headlines &middot; latest '+ago(items[0].published_unix)+' ago';
   }).catch(function(){
-    document.getElementById('ticker').innerHTML='<div class="tk-track">Wire feed unavailable &mdash; open the news dashboard for the latest.</div>';
     var f=document.getElementById('feat');if(f)f.innerHTML='<div class="feat-title">Open the news feed for the latest headlines.</div>';
   });
 
+  /* ---- bankruptcy teaser ---- */
   fetch(BK_URL).then(function(r){return r.json();}).then(function(d){
     var cases=Array.isArray(d)?d:Object.keys(d).map(function(k){return d[k];});
     var t=document.getElementById('teaser-bk'); if(!t)return;

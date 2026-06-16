@@ -1,0 +1,434 @@
+[
+ {
+  "ticker": "ABUS",
+  "name": "Arbutus Biopharma Corp"
+ },
+ {
+  "ticker": "ACRS",
+  "name": "Aclaris Therapeutics, Inc."
+ },
+ {
+  "ticker": "AHCO",
+  "name": "Adapthealth Corp."
+ },
+ {
+  "ticker": "AME",
+  "name": "Ametek"
+ },
+ {
+  "ticker": "ANVS",
+  "name": "Annovis Bio, Inc."
+ },
+ {
+  "ticker": "APRE",
+  "name": "Aprea Therapeutics, Inc."
+ },
+ {
+  "ticker": "ARMK",
+  "name": "Aramark"
+ },
+ {
+  "ticker": "AVBP",
+  "name": "Arrivent Biopharma, Inc."
+ },
+ {
+  "ticker": "AVTR",
+  "name": "Avantor, Inc."
+ },
+ {
+  "ticker": "AVTX",
+  "name": "Avalo Therapeutics, Inc."
+ },
+ {
+  "ticker": "AWK",
+  "name": "American Water Works"
+ },
+ {
+  "ticker": "AXR",
+  "name": "Amrep Corp."
+ },
+ {
+  "ticker": "AXTA",
+  "name": "Axalta Coating Systems"
+ },
+ {
+  "ticker": "BDN",
+  "name": "Brandywine Realty Trust"
+ },
+ {
+  "ticker": "BSY",
+  "name": "Bentley Systems"
+ },
+ {
+  "ticker": "BTCS",
+  "name": "Btcs Inc."
+ },
+ {
+  "ticker": "BURL",
+  "name": "Burlington Stores"
+ },
+ {
+  "ticker": "BV",
+  "name": "Brightview Holdings, Inc."
+ },
+ {
+  "ticker": "CABA",
+  "name": "Cabaletta Bio, Inc."
+ },
+ {
+  "ticker": "CERT",
+  "name": "Certara, Inc."
+ },
+ {
+  "ticker": "CMCSA",
+  "name": "Comcast Corporation"
+ },
+ {
+  "ticker": "CNTX",
+  "name": "Context Therapeutics Inc."
+ },
+ {
+  "ticker": "COBA",
+  "name": "Chilean Cobalt Corp."
+ },
+ {
+  "ticker": "COHN",
+  "name": "Cohen & Co Inc."
+ },
+ {
+  "ticker": "COR",
+  "name": "Cencora (Amerisourcebergen)"
+ },
+ {
+  "ticker": "CPB",
+  "name": "Campbell Soup Company"
+ },
+ {
+  "ticker": "CPWR",
+  "name": "Ocean Thermal Energy Corp"
+ },
+ {
+  "ticker": "CRS",
+  "name": "Carpenter Technology Corp"
+ },
+ {
+  "ticker": "CUBE",
+  "name": "Cubesmart"
+ },
+ {
+  "ticker": "DORM",
+  "name": "Dorman Products, Inc."
+ },
+ {
+  "ticker": "DWAY",
+  "name": "Driveitaway Holdings, Inc."
+ },
+ {
+  "ticker": "ECVT",
+  "name": "Ecovyst Inc."
+ },
+ {
+  "ticker": "EPAM",
+  "name": "Epam Systems, Inc."
+ },
+ {
+  "ticker": "ESGH",
+  "name": "Esg Inc."
+ },
+ {
+  "ticker": "ESMC",
+  "name": "Escalon Medical Corp"
+ },
+ {
+  "ticker": "ESMR",
+  "name": "E-Smart Corp."
+ },
+ {
+  "ticker": "EXYN",
+  "name": "Exyn Technologies, Inc."
+ },
+ {
+  "ticker": "FIVE",
+  "name": "Five Below"
+ },
+ {
+  "ticker": "FMC",
+  "name": "Fmc Corporation"
+ },
+ {
+  "ticker": "FORA",
+  "name": "Forian Inc."
+ },
+ {
+  "ticker": "FSCO",
+  "name": "Fs Credit Opportunities Corp."
+ },
+ {
+  "ticker": "FSK",
+  "name": "Fs Kkr Capital Corp"
+ },
+ {
+  "ticker": "GBLI",
+  "name": "Global Indemnity Group, Llc"
+ },
+ {
+  "ticker": "GMED",
+  "name": "Globus Medical Inc"
+ },
+ {
+  "ticker": "GMER",
+  "name": "Good Gaming, Inc."
+ },
+ {
+  "ticker": "GRTX",
+  "name": "Galera Therapeutics, Inc."
+ },
+ {
+  "ticker": "HCSG",
+  "name": "Healthcare Services Group Inc"
+ },
+ {
+  "ticker": "HLNE",
+  "name": "Hamilton Lane Inc"
+ },
+ {
+  "ticker": "HQH",
+  "name": "Abrdn Healthcare Investors"
+ },
+ {
+  "ticker": "HQL",
+  "name": "Abrdn Life Sciences Investors"
+ },
+ {
+  "ticker": "HRMY",
+  "name": "Harmony Biosciences"
+ },
+ {
+  "ticker": "HSDT",
+  "name": "Solana Co"
+ },
+ {
+  "ticker": "INO",
+  "name": "Inovio Pharmaceuticals"
+ },
+ {
+  "ticker": "INVU",
+  "name": "Investview, Inc."
+ },
+ {
+  "ticker": "IPSC",
+  "name": "Century Therapeutics, Inc."
+ },
+ {
+  "ticker": "IRT",
+  "name": "Independence Realty Trust"
+ },
+ {
+  "ticker": "ISSC",
+  "name": "Innovative Solutions & Support Inc"
+ },
+ {
+  "ticker": "JJSF",
+  "name": "J&J Snack Foods Corp"
+ },
+ {
+  "ticker": "KWR",
+  "name": "Quaker Chemical Corp"
+ },
+ {
+  "ticker": "LNC",
+  "name": "Lincoln National Corp"
+ },
+ {
+  "ticker": "LRMR",
+  "name": "Larimar Therapeutics"
+ },
+ {
+  "ticker": "MLYS",
+  "name": "Mineralys Therapeutics, Inc."
+ },
+ {
+  "ticker": "MRBK",
+  "name": "Meridian Corp"
+ },
+ {
+  "ticker": "NNUP",
+  "name": "Nocopi Technologies Inc/Md/"
+ },
+ {
+  "ticker": "NVRI",
+  "name": "Enviri Corp"
+ },
+ {
+  "ticker": "NXGL",
+  "name": "Nexgel, Inc."
+ },
+ {
+  "ticker": "OBIO",
+  "name": "Orchestra Biomed Holdings, Inc."
+ },
+ {
+  "ticker": "OCGN",
+  "name": "Ocugen"
+ },
+ {
+  "ticker": "OFLX",
+  "name": "Omega Flex"
+ },
+ {
+  "ticker": "PASG",
+  "name": "Passage Bio"
+ },
+ {
+  "ticker": "PHIO",
+  "name": "Phio Pharmaceuticals Corp."
+ },
+ {
+  "ticker": "PKBK",
+  "name": "Parke Bancorp, Inc."
+ },
+ {
+  "ticker": "PVLA",
+  "name": "Palvella Therapeutics, Inc."
+ },
+ {
+  "ticker": "QNBC",
+  "name": "Qnb Corp."
+ },
+ {
+  "ticker": "QNTO",
+  "name": "Quaint Oak Bancorp, Inc."
+ },
+ {
+  "ticker": "QVCAQ",
+  "name": "Qvc Group, Inc."
+ },
+ {
+  "ticker": "RCMT",
+  "name": "Rcm Technologies, Inc."
+ },
+ {
+  "ticker": "RDN",
+  "name": "Radian Group"
+ },
+ {
+  "ticker": "RPMT",
+  "name": "Rego Payment Architectures, Inc."
+ },
+ {
+  "ticker": "SEIC",
+  "name": "Sei Investments"
+ },
+ {
+  "ticker": "SFES",
+  "name": "Safeguard Scientifics Inc"
+ },
+ {
+  "ticker": "SND",
+  "name": "Smart Sand, Inc."
+ },
+ {
+  "ticker": "SSKN",
+  "name": "Strata Skin Sciences, Inc."
+ },
+ {
+  "ticker": "STIM",
+  "name": "Neuronetics, Inc."
+ },
+ {
+  "ticker": "TELA",
+  "name": "Tela Bio, Inc."
+ },
+ {
+  "ticker": "TFX",
+  "name": "Teleflex Inc"
+ },
+ {
+  "ticker": "TOL",
+  "name": "Toll Brothers"
+ },
+ {
+  "ticker": "TOPP",
+  "name": "Toppoint Holdings Inc."
+ },
+ {
+  "ticker": "TRAW",
+  "name": "Traws Pharma, Inc."
+ },
+ {
+  "ticker": "TSEOF",
+  "name": "Trinseo Plc"
+ },
+ {
+  "ticker": "UGI",
+  "name": "Ugi Corporation"
+ },
+ {
+  "ticker": "UHS",
+  "name": "Universal Health Services"
+ },
+ {
+  "ticker": "UHT",
+  "name": "Universal Health Realty Income Trust"
+ },
+ {
+  "ticker": "UIS",
+  "name": "Unisys"
+ },
+ {
+  "ticker": "URBN",
+  "name": "Urban Outfitters"
+ },
+ {
+  "ticker": "UVSP",
+  "name": "Univest Financial Corp"
+ },
+ {
+  "ticker": "VERX",
+  "name": "Vertex, Inc."
+ },
+ {
+  "ticker": "VLGEA",
+  "name": "Village Super Market Inc"
+ },
+ {
+  "ticker": "VPG",
+  "name": "Vishay Precision Group, Inc."
+ },
+ {
+  "ticker": "VRCA",
+  "name": "Verrica Pharmaceuticals Inc."
+ },
+ {
+  "ticker": "VSH",
+  "name": "Vishay Intertechnology"
+ },
+ {
+  "ticker": "VSNT",
+  "name": "Versant Media Group, Inc."
+ },
+ {
+  "ticker": "WHK",
+  "name": "Whitehawk Income Corp"
+ },
+ {
+  "ticker": "WINT",
+  "name": "Windtree Therapeutics Inc /De/"
+ },
+ {
+  "ticker": "WLSS",
+  "name": "Welsis Corp."
+ },
+ {
+  "ticker": "WST",
+  "name": "West Pharmaceutical Services Inc"
+ },
+ {
+  "ticker": "WTRG",
+  "name": "Essential Utilities (Aqua)"
+ },
+ {
+  "ticker": "XHLD",
+  "name": "Ten Holdings, Inc."
+ }
+]

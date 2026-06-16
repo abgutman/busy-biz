@@ -1,0 +1,38 @@
+name: Refresh quotes
+
+# Delayed stock quotes for the local public companies, refreshed server-side
+# (Yahoo's quote API has no CORS, so the browser can't fetch it directly).
+# Roughly every 30 min during US market hours on weekdays (cron is UTC).
+on:
+  schedule:
+    - cron: '*/30 13-21 * * 1-5'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: quotes
+  cancel-in-progress: false
+
+jobs:
+  quotes:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -r requirements.txt
+      - run: python poll_quotes.py
+      - name: Commit refreshed quotes
+        run: |
+          if [ -n "$(git status --porcelain quotes.json)" ]; then
+            git config user.name "busy-biz quotes"
+            git config user.email "actions@users.noreply.github.com"
+            git add quotes.json
+            git commit -m "Refresh quotes $(date -u +'%Y-%m-%d %H:%MZ')"
+            git push
+          else
+            echo "No quote changes"
+          fi
