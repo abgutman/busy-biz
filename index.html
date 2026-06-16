@@ -6,46 +6,79 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Busy Biz</title>
   <style>
-    :root {
-      --bg:#0d1117; --panel:#161b22; --border:#21262d; --line:#30363d;
-      --text:#e6edf3; --muted:#8b949e; --accent:#3fb950; --accent2:#d29922;
+    :root{
+      --bg:#0a0e14; --panel:#0f1620; --panel2:#11161f; --border:#1c2530; --line:#2a3442;
+      --text:#e6edf3; --muted:#7a8699; --accent:#26d07c; --accent2:#f0b90b; --down:#f6465d;
+      --mono:ui-monospace,SFMono-Regular,"SF Mono",Menlo,Consolas,monospace;
     }
-    * { box-sizing:border-box; }
-    body {
-      margin:0; background:var(--bg); color:var(--text);
+    *{box-sizing:border-box;}
+    body{margin:0;background:var(--bg);color:var(--text);
       font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-      -webkit-font-smoothing:antialiased; line-height:1.5;
-    }
-    .wrap { max-width:1040px; margin:0 auto; padding:48px 24px 64px; }
-    header { border-bottom:1px solid var(--border); padding-bottom:28px; margin-bottom:40px; }
-    .dots { display:flex; gap:7px; margin-bottom:18px; }
-    .dots span { width:11px; height:11px; border-radius:50%; display:inline-block; }
-    .dots .r { background:#f85149; } .dots .y { background:var(--accent2); } .dots .g { background:var(--accent); }
-    h1 {
-      margin:0; font-size:clamp(34px,7vw,56px); font-weight:800; letter-spacing:2px;
-      background:linear-gradient(90deg,var(--text),var(--accent)); -webkit-background-clip:text;
-      background-clip:text; -webkit-text-fill-color:transparent;
-    }
-    .tagline { color:var(--muted); font-size:clamp(15px,2.5vw,18px); margin-top:8px; letter-spacing:.3px; }
-    .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:18px; }
-    .tile {
-      display:flex; flex-direction:column; background:var(--panel); border:1px solid var(--border);
-      border-radius:12px; padding:24px; text-decoration:none; color:inherit;
-      transition:transform .15s ease, border-color .15s ease, box-shadow .15s ease;
-    }
-    .tile:hover, .tile:focus-visible {
-      transform:translateY(-3px); border-color:var(--accent);
-      box-shadow:0 8px 24px rgba(0,0,0,.45), 0 0 0 1px var(--accent) inset; outline:none;
-    }
-    .tile-icon { font-size:30px; margin-bottom:14px; }
-    .tile h2 { margin:0 0 8px; font-size:18px; font-weight:700; }
-    .tile p { margin:0 0 18px; color:var(--muted); font-size:14px; flex-grow:1; }
-    .open { color:var(--accent); font-weight:700; font-size:14px; }
-    .ext { color:var(--muted); font-size:12px; margin-left:5px; vertical-align:super; }
-    footer { margin-top:48px; padding-top:24px; border-top:1px solid var(--border); color:var(--muted); font-size:12.5px; }
-    footer .src { color:var(--accent2); font-weight:600; }
-    a.foot { color:var(--muted); }
-    @media (max-width:480px) { .wrap { padding:32px 16px 48px; } }
+      -webkit-font-smoothing:antialiased;line-height:1.5;}
+    a{color:inherit;}
+    /* status bar */
+    .statusbar{position:sticky;top:0;z-index:50;display:flex;align-items:center;gap:14px;
+      background:#070b10;border-bottom:1px solid var(--border);padding:7px 18px;
+      font-family:var(--mono);font-size:12px;color:var(--muted);}
+    .live{display:inline-flex;align-items:center;gap:6px;color:var(--accent);font-weight:700;letter-spacing:.5px;}
+    .live .dot{width:8px;height:8px;border-radius:50%;background:var(--accent);animation:pulse 1.6s infinite;}
+    @keyframes pulse{0%,100%{opacity:1;}50%{opacity:.2;}}
+    .sb-name{color:var(--text);font-weight:700;letter-spacing:1.5px;}
+    .sb-spacer{flex:1;}
+    #clock{color:var(--text);font-variant-numeric:tabular-nums;}
+    .sb-mut{display:none;}
+    @media(min-width:560px){.sb-mut{display:inline;}}
+    /* ticker tape */
+    #ticker{overflow:hidden;white-space:nowrap;background:#080d13;
+      border-bottom:1px solid var(--border);}
+    .tk-track{display:inline-block;padding:9px 0;animation:scroll 95s linear infinite;
+      font-family:var(--mono);font-size:13px;}
+    #ticker:hover .tk-track{animation-play-state:paused;}
+    .tk-track a{color:var(--text);text-decoration:none;}
+    .tk-track a b{color:var(--accent);}
+    .tk-track a:hover{color:var(--accent2);}
+    .tk-track .sep{color:var(--line);margin:0 16px;}
+    @keyframes scroll{from{transform:translateX(0);}to{transform:translateX(-50%);}}
+    /* layout */
+    .wrap{max-width:1060px;margin:0 auto;padding:40px 24px 64px;}
+    header{margin-bottom:26px;}
+    h1{margin:0;font-size:clamp(36px,8vw,62px);font-weight:800;letter-spacing:2px;
+      background:linear-gradient(90deg,var(--text) 30%,var(--accent));
+      -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;}
+    .tagline{color:var(--muted);font-size:clamp(15px,2.5vw,18px);margin-top:6px;letter-spacing:.3px;}
+    /* featured */
+    .featured{background:linear-gradient(135deg,#101824,#0b1119);border:1px solid var(--border);
+      border-radius:12px;padding:20px 24px;margin:0 0 30px;min-height:104px;
+      box-shadow:0 1px 0 rgba(38,208,124,.15) inset;}
+    .featured .flabel{font-size:11px;letter-spacing:2px;color:var(--accent);font-weight:700;
+      margin-bottom:12px;display:flex;align-items:center;gap:8px;}
+    .featured .flabel .dot{width:7px;height:7px;border-radius:50%;background:var(--accent);animation:pulse 1.6s infinite;}
+    #feat{transition:opacity .25s ease;}
+    #feat a{text-decoration:none;display:block;}
+    .feat-meta{display:flex;justify-content:space-between;gap:12px;font-size:12px;margin-bottom:7px;
+      font-family:var(--mono);flex-wrap:wrap;}
+    .feat-co{color:var(--accent2);font-weight:700;}
+    .feat-pub{color:var(--muted);}
+    .feat-title{font-size:clamp(16px,2.4vw,20px);font-weight:600;line-height:1.35;}
+    #feat a:hover .feat-title{color:var(--accent);}
+    /* board */
+    .board{display:grid;grid-template-columns:repeat(auto-fit,minmax(238px,1fr));gap:16px;}
+    .panel{display:flex;flex-direction:column;background:var(--panel);border:1px solid var(--border);
+      border-radius:12px;padding:22px;text-decoration:none;
+      transition:transform .15s ease,border-color .15s ease,box-shadow .15s ease;}
+    .panel:hover,.panel:focus-visible{transform:translateY(-3px);border-color:var(--accent);
+      box-shadow:0 10px 26px rgba(0,0,0,.5),0 0 0 1px var(--accent) inset;outline:none;}
+    .p-icon{font-size:28px;margin-bottom:12px;}
+    .panel h2{margin:0 0 7px;font-size:17px;font-weight:700;}
+    .panel p{margin:0 0 14px;color:var(--muted);font-size:13.5px;flex-grow:1;}
+    .teaser{font-family:var(--mono);font-size:12.5px;color:var(--muted);margin-bottom:14px;min-height:17px;}
+    .teaser .big{color:var(--accent);font-weight:700;font-size:15px;}
+    .open{color:var(--accent);font-weight:700;font-size:13.5px;}
+    .ext{color:var(--muted);font-size:11px;margin-left:5px;vertical-align:super;}
+    footer{margin-top:46px;padding-top:22px;border-top:1px solid var(--border);
+      color:var(--muted);font-size:12.5px;}
+    footer .src{color:var(--accent2);font-weight:600;}
+    @media(max-width:480px){.wrap{padding:28px 16px 48px;}}
   </style>
 </head>
 <body>
@@ -83,42 +116,121 @@ if (sessionStorage.getItem('busybiz_auth')==='1') {
 }
 </script>
 
+  <div class="statusbar">
+    <span class="live"><span class="dot"></span>LIVE</span>
+    <span class="sb-name">BUSY BIZ</span>
+    <span class="sb-mut">&middot; Philadelphia-region business desk</span>
+    <span class="sb-spacer"></span>
+    <span id="clock">--:--:-- ET</span>
+  </div>
+  <div id="ticker"><div class="tk-track">Loading the wire&hellip;</div></div>
+
   <div class="wrap">
     <header>
-      <div class="dots"><span class="r"></span><span class="y"></span><span class="g"></span></div>
       <h1>BUSY BIZ</h1>
       <div class="tagline">Tools to keep biz busy</div>
     </header>
-    <main class="grid">
-      <a class="tile" href="https://abgutman.github.io/earnings-tracker/recent_earnings.html" target="_blank" rel="noopener">
-        <div class="tile-icon" role="img" aria-label="chart increasing">📈</div>
+
+    <section class="featured" aria-label="Latest headline from the wire">
+      <div class="flabel"><span class="dot"></span>LATEST FROM THE WIRE</div>
+      <div id="feat"><div class="feat-title">Connecting to the news feed&hellip;</div></div>
+    </section>
+
+    <main class="board">
+      <a class="panel" href="https://abgutman.github.io/earnings-tracker/recent_earnings.html" target="_blank" rel="noopener">
+        <div class="p-icon" role="img" aria-label="chart increasing">📈</div>
         <h2>Earnings Reports<span class="ext" aria-label="opens a separate site">↗</span></h2>
-        <p>Quarterly earnings filings from the last 90 days and confirmed upcoming calls for 100+ public companies HQ'd in the Philadelphia region.</p>
+        <p>Quarterly earnings filings and confirmed upcoming calls for the region's public companies.</p>
+        <div class="teaser">100+ companies tracked &middot; last 90 days</div>
         <span class="open">Open &rarr;</span>
       </a>
-      <a class="tile" href="https://abgutman.github.io/earnings-tracker/news_feed.html" target="_blank" rel="noopener">
-        <div class="tile-icon" role="img" aria-label="newspaper">📰</div>
+      <a class="panel" href="https://abgutman.github.io/earnings-tracker/news_feed.html" target="_blank" rel="noopener">
+        <div class="p-icon" role="img" aria-label="newspaper">📰</div>
         <h2>Business News Feed<span class="ext" aria-label="opens a separate site">↗</span></h2>
-        <p>Yahoo Finance headlines from the last 48 hours for the region's public companies. Refreshed hourly during business hours.</p>
+        <p>Yahoo Finance headlines for the region's public companies, refreshed hourly.</p>
+        <div class="teaser" id="teaser-news">loading wire&hellip;</div>
         <span class="open">Open &rarr;</span>
       </a>
-      <a class="tile" href="https://abgutman.github.io/bankruptcy-tracker/bankruptcy_dashboard.html" target="_blank" rel="noopener">
-        <div class="tile-icon" role="img" aria-label="balance scale">⚖️</div>
+      <a class="panel" href="https://abgutman.github.io/bankruptcy-tracker/bankruptcy_dashboard.html" target="_blank" rel="noopener">
+        <div class="p-icon" role="img" aria-label="balance scale">⚖️</div>
         <h2>Bankruptcy Tracker<span class="ext" aria-label="opens a separate site">↗</span></h2>
-        <p>Chapter 11 filings from Philadelphia-region companies, tracked across all federal courts nationwide.</p>
+        <p>Chapter 11 filings from Philadelphia-region companies, tracked across all federal courts.</p>
+        <div class="teaser" id="teaser-bk">loading filings&hellip;</div>
         <span class="open">Open &rarr;</span>
       </a>
-      <a class="tile" href="exec_comp_dashboard.html">
-        <div class="tile-icon" role="img" aria-label="money bag">💰</div>
+      <a class="panel" href="exec_comp_dashboard.html">
+        <div class="p-icon" role="img" aria-label="money bag">💰</div>
         <h2>Executive Compensation</h2>
-        <p>Executive pay at Philadelphia-area public companies, pulled from DEF 14A proxy statements.</p>
+        <p>Executive pay at Philadelphia-area public companies, pulled from DEF 14A proxies.</p>
+        <div class="teaser">12 companies &middot; proxy-statement pay</div>
         <span class="open">Open &rarr;</span>
       </a>
     </main>
+
     <footer>
       <p class="src">These are working tools, not finished reporting &mdash; always check the source material before publishing.</p>
-      <p>Updated Jun 16, 2026 4:41 PM ET. Earnings &amp; bankruptcy data refresh on their own schedules; exec comp reflects the latest proxy pull.</p>
+      <p>Live wire &amp; counts pull from the earnings and bankruptcy trackers, which refresh on their own schedules. Built Jun 16, 2026.</p>
     </footer>
   </div>
+
+<script>
+  var NEWS_URL = 'https://abgutman.github.io/earnings-tracker/earnings_data/news_feed.json';
+  var BK_URL   = 'https://abgutman.github.io/bankruptcy-tracker/bankruptcy_data/cases.json';
+
+  function esc(t){var d=document.createElement('div');d.textContent=(t==null?'':String(t));return d.innerHTML;}
+  function sym(t){var m=String(t==null?'':t).match(/[A-Z]{1,6}/);return m?m[0]:'';}
+  function ago(unix){var s=Math.floor(Date.now()/1000)-Number(unix);
+    if(!isFinite(s)||s<0)return'';
+    if(s<3600)return Math.max(1,Math.floor(s/60))+'m';
+    if(s<86400)return Math.floor(s/3600)+'h';
+    return Math.floor(s/86400)+'d';}
+
+  function tick(){
+    var o={timeZone:'America/New_York',hour:'2-digit',minute:'2-digit',second:'2-digit',hour12:false};
+    var el=document.getElementById('clock');
+    if(el)el.textContent=new Date().toLocaleTimeString('en-US',o)+' ET';
+  }
+  setInterval(tick,1000); tick();
+
+  var featured=[], fi=0;
+  function renderFeatured(){
+    var it=featured[fi]; if(!it)return;
+    var el=document.getElementById('feat'); el.style.opacity=0;
+    setTimeout(function(){
+      el.innerHTML='<a href="'+esc(it.link)+'" target="_blank" rel="noopener">'+
+        '<div class="feat-meta"><span class="feat-co">'+esc(it.company)+'</span>'+
+        '<span class="feat-pub">'+esc(it.publisher)+' &middot; '+ago(it.published_unix)+' ago</span></div>'+
+        '<div class="feat-title">'+esc(it.title)+'</div></a>';
+      el.style.opacity=1;
+    },240);
+  }
+
+  fetch(NEWS_URL).then(function(r){return r.json();}).then(function(d){
+    var items=(d.items||[]).slice().sort(function(a,b){return Number(b.published_unix)-Number(a.published_unix);});
+    if(!items.length)throw 0;
+    var strip=items.slice(0,30).map(function(it){
+      return '<a href="'+esc(it.link)+'" target="_blank" rel="noopener"><b>'+
+        esc(sym(it.tickers)||it.company)+'</b> '+esc(it.title)+'</a>';
+    }).join('<span class="sep">&#9670;</span>');
+    document.getElementById('ticker').innerHTML=
+      '<div class="tk-track">'+strip+'<span class="sep">&#9670;</span>'+strip+'</div>';
+    featured=items.slice(0,10); fi=0; renderFeatured();
+    setInterval(function(){fi=(fi+1)%featured.length;renderFeatured();},4500);
+    var t=document.getElementById('teaser-news');
+    if(t)t.innerHTML='<span class="big">'+items.length+'</span> headlines &middot; latest '+ago(items[0].published_unix)+' ago';
+  }).catch(function(){
+    document.getElementById('ticker').innerHTML='<div class="tk-track">Wire feed unavailable &mdash; open the news dashboard for the latest.</div>';
+    var f=document.getElementById('feat');if(f)f.innerHTML='<div class="feat-title">Open the news feed for the latest headlines.</div>';
+  });
+
+  fetch(BK_URL).then(function(r){return r.json();}).then(function(d){
+    var cases=Array.isArray(d)?d:Object.keys(d).map(function(k){return d[k];});
+    var t=document.getElementById('teaser-bk'); if(!t)return;
+    if(!cases.length){t.textContent='tracker live';return;}
+    cases.sort(function(a,b){return String(b.date_filed||'').localeCompare(String(a.date_filed||''));});
+    var latest=esc(cases[0].debtor_name||cases[0].case_name||'').slice(0,38);
+    t.innerHTML='<span class="big">'+cases.length+'</span> Ch. 11 filings &middot; latest: '+latest;
+  }).catch(function(){var t=document.getElementById('teaser-bk');if(t)t.textContent='tracker live';});
+</script>
 </body>
 </html>
