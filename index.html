@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Busy Biz</title>
+  <style>
+    :root {
+      --bg:#0d1117; --panel:#161b22; --border:#21262d; --line:#30363d;
+      --text:#e6edf3; --muted:#8b949e; --accent:#3fb950; --accent2:#d29922;
+    }
+    * { box-sizing:border-box; }
+    body {
+      margin:0; background:var(--bg); color:var(--text);
+      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+      -webkit-font-smoothing:antialiased; line-height:1.5;
+    }
+    .wrap { max-width:1040px; margin:0 auto; padding:48px 24px 64px; }
+    header { border-bottom:1px solid var(--border); padding-bottom:28px; margin-bottom:40px; }
+    .dots { display:flex; gap:7px; margin-bottom:18px; }
+    .dots span { width:11px; height:11px; border-radius:50%; display:inline-block; }
+    .dots .r { background:#f85149; } .dots .y { background:var(--accent2); } .dots .g { background:var(--accent); }
+    h1 {
+      margin:0; font-size:clamp(34px,7vw,56px); font-weight:800; letter-spacing:2px;
+      background:linear-gradient(90deg,var(--text),var(--accent)); -webkit-background-clip:text;
+      background-clip:text; -webkit-text-fill-color:transparent;
+    }
+    .tagline { color:var(--muted); font-size:clamp(15px,2.5vw,18px); margin-top:8px; letter-spacing:.3px; }
+    .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:18px; }
+    .tile {
+      display:flex; flex-direction:column; background:var(--panel); border:1px solid var(--border);
+      border-radius:12px; padding:24px; text-decoration:none; color:inherit;
+      transition:transform .15s ease, border-color .15s ease, box-shadow .15s ease;
+    }
+    .tile:hover, .tile:focus-visible {
+      transform:translateY(-3px); border-color:var(--accent);
+      box-shadow:0 8px 24px rgba(0,0,0,.45), 0 0 0 1px var(--accent) inset; outline:none;
+    }
+    .tile-icon { font-size:30px; margin-bottom:14px; }
+    .tile h2 { margin:0 0 8px; font-size:18px; font-weight:700; }
+    .tile p { margin:0 0 18px; color:var(--muted); font-size:14px; flex-grow:1; }
+    .open { color:var(--accent); font-weight:700; font-size:14px; }
+    .ext { color:var(--muted); font-size:12px; margin-left:5px; vertical-align:super; }
+    footer { margin-top:48px; padding-top:24px; border-top:1px solid var(--border); color:var(--muted); font-size:12.5px; }
+    footer .src { color:var(--accent2); font-weight:600; }
+    a.foot { color:var(--muted); }
+    @media (max-width:480px) { .wrap { padding:32px 16px 48px; } }
+  </style>
+</head>
+<body>
+
+<div id="auth-gate" style="position:fixed;inset:0;background:#0d1117;z-index:99999;display:flex;align-items:center;justify-content:center;">
+  <div style="background:#161b22;border:1px solid #21262d;padding:40px;border-radius:12px;text-align:center;max-width:360px;width:90%;box-shadow:0 8px 30px rgba(0,0,0,0.6);">
+    <div style="font-size:22px;font-weight:800;letter-spacing:2px;color:#e6edf3;margin-bottom:4px;">BUSY BIZ</div>
+    <div style="font-size:12px;color:#8b949e;margin-bottom:22px;">Tools to keep biz busy</div>
+    <input id="auth-pw" type="password" placeholder="Password" autofocus
+      style="width:100%;padding:12px;border:1px solid #30363d;background:#0d1117;color:#e6edf3;border-radius:6px;font-size:15px;margin-bottom:12px;box-sizing:border-box;"
+      onkeydown="if(event.key==='Enter')checkPw()">
+    <button onclick="checkPw()"
+      style="width:100%;padding:12px;background:#3fb950;color:#0d1117;border:none;border-radius:6px;font-size:15px;font-weight:700;cursor:pointer;">
+      Enter</button>
+    <p id="auth-err" style="color:#f85149;font-size:13px;margin-top:10px;display:none;">Incorrect password</p>
+  </div>
+</div>
+<script>
+async function sha256(msg) {
+  const buf = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(msg));
+  return [...new Uint8Array(buf)].map(b => b.toString(16).padStart(2,'0')).join('');
+}
+async function checkPw() {
+  const h = await sha256(document.getElementById('auth-pw').value);
+  if (h === '6f9b9af28410ba27d402b20770ef7467287ccac76863972d3491feedc75703ac') {
+    sessionStorage.setItem('busybiz_auth','1');
+    document.getElementById('auth-gate').remove();
+  } else {
+    document.getElementById('auth-err').style.display='block';
+    document.getElementById('auth-pw').value='';
+  }
+}
+if (sessionStorage.getItem('busybiz_auth')==='1') {
+  document.getElementById('auth-gate').remove();
+}
+</script>
+
+  <div class="wrap">
+    <header>
+      <div class="dots"><span class="r"></span><span class="y"></span><span class="g"></span></div>
+      <h1>BUSY BIZ</h1>
+      <div class="tagline">Tools to keep biz busy</div>
+    </header>
+    <main class="grid">
+      <a class="tile" href="https://abgutman.github.io/earnings-tracker/recent_earnings.html" target="_blank" rel="noopener">
+        <div class="tile-icon" role="img" aria-label="chart increasing">📈</div>
+        <h2>Earnings Reports<span class="ext" aria-label="opens a separate site">↗</span></h2>
+        <p>Quarterly earnings filings from the last 90 days and confirmed upcoming calls for 100+ public companies HQ'd in the Philadelphia region.</p>
+        <span class="open">Open &rarr;</span>
+      </a>
+      <a class="tile" href="https://abgutman.github.io/earnings-tracker/news_feed.html" target="_blank" rel="noopener">
+        <div class="tile-icon" role="img" aria-label="newspaper">📰</div>
+        <h2>Business News Feed<span class="ext" aria-label="opens a separate site">↗</span></h2>
+        <p>Yahoo Finance headlines from the last 48 hours for the region's public companies. Refreshed hourly during business hours.</p>
+        <span class="open">Open &rarr;</span>
+      </a>
+      <a class="tile" href="https://abgutman.github.io/bankruptcy-tracker/bankruptcy_dashboard.html" target="_blank" rel="noopener">
+        <div class="tile-icon" role="img" aria-label="balance scale">⚖️</div>
+        <h2>Bankruptcy Tracker<span class="ext" aria-label="opens a separate site">↗</span></h2>
+        <p>Chapter 11 filings from Philadelphia-region companies, tracked across all federal courts nationwide.</p>
+        <span class="open">Open &rarr;</span>
+      </a>
+      <a class="tile" href="exec_comp_dashboard.html">
+        <div class="tile-icon" role="img" aria-label="money bag">💰</div>
+        <h2>Executive Compensation</h2>
+        <p>Executive pay at Philadelphia-area public companies, pulled from DEF 14A proxy statements.</p>
+        <span class="open">Open &rarr;</span>
+      </a>
+    </main>
+    <footer>
+      <p class="src">These are working tools, not finished reporting &mdash; always check the source material before publishing.</p>
+      <p>Updated Jun 16, 2026 4:41 PM ET. Earnings &amp; bankruptcy data refresh on their own schedules; exec comp reflects the latest proxy pull.</p>
+    </footer>
+  </div>
+</body>
+</html>
