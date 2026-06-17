@@ -158,6 +158,13 @@ if (localStorage.getItem('busybiz_auth')==='1') {
         <div class="teaser" id="teaser-bk">loading filings&hellip;</div>
         <span class="open">Open &rarr;</span>
       </a>
+      <a class="panel" href="https://abgutman.github.io/nlrb-tracker/nlrb_dashboard.html" target="_blank" rel="noopener">
+        <div class="p-icon" role="img" aria-label="placard">🪧</div>
+        <h2>NLRB Labor Tracker<span class="ext" aria-label="opens a separate site">↗</span></h2>
+        <p>Union election petitions, unfair-labor-practice charges and Board/ALJ decisions from NLRB Region 4 (Philadelphia).</p>
+        <div class="teaser" id="teaser-nlrb">loading cases&hellip;</div>
+        <span class="open">Open &rarr;</span>
+      </a>
       <a class="panel" href="exec_comp_dashboard.html">
         <div class="p-icon" role="img" aria-label="money bag">💰</div>
         <h2>Executive Compensation</h2>
@@ -169,7 +176,7 @@ if (localStorage.getItem('busybiz_auth')==='1') {
 
     <footer>
       <p class="src">These are working tools, not finished reporting &mdash; always check the source material before publishing.</p>
-      <p>Stock quotes are <strong>delayed</strong> and refreshed periodically; the tape shows how long since the last update. Wire &amp; filing counts pull from the earnings and bankruptcy trackers, which refresh on their own schedules. Built Jun 16, 2026.</p>
+      <p>Stock quotes are <strong>delayed</strong> and refreshed periodically; the tape shows how long since the last update. Wire &amp; filing counts pull from the earnings and bankruptcy trackers, which refresh on their own schedules. Built Jun 17, 2026.</p>
     </footer>
   </div>
 
@@ -177,6 +184,7 @@ if (localStorage.getItem('busybiz_auth')==='1') {
   var QUOTES_URL = 'quotes.json';
   var NEWS_URL = 'https://abgutman.github.io/earnings-tracker/earnings_data/news_feed.json';
   var BK_URL   = 'https://abgutman.github.io/bankruptcy-tracker/bankruptcy_data/cases.json';
+  var NLRB_URL = 'https://abgutman.github.io/nlrb-tracker/nlrb_data/cases.json';
 
   function esc(t){var d=document.createElement('div');d.textContent=(t==null?'':String(t));return d.innerHTML;}
   function sym(t){var m=String(t==null?'':t).match(/[A-Z]{1,6}/);return m?m[0]:'';}
@@ -254,6 +262,16 @@ if (localStorage.getItem('busybiz_auth')==='1') {
     var latest=esc(cases[0].debtor_name||cases[0].case_name||'').slice(0,38);
     t.innerHTML='<span class="big">'+cases.length+'</span> Ch. 11 filings &middot; latest: '+latest;
   }).catch(function(){var t=document.getElementById('teaser-bk');if(t)t.textContent='tracker live';});
+
+  /* ---- NLRB teaser ---- */
+  fetch(NLRB_URL).then(function(r){return r.json();}).then(function(d){
+    var cases=Array.isArray(d)?d:Object.keys(d).map(function(k){return d[k];});
+    var t=document.getElementById('teaser-nlrb'); if(!t)return;
+    if(!cases.length){t.textContent='tracker live';return;}
+    cases.sort(function(a,b){return String(b.date_filed||'').localeCompare(String(a.date_filed||''));});
+    var latest=esc(cases[0].name||'').slice(0,38);
+    t.innerHTML='<span class="big">'+cases.length+'</span> Region 4 cases &middot; latest: '+latest;
+  }).catch(function(){var t=document.getElementById('teaser-nlrb');if(t)t.textContent='tracker live';});
 </script>
 </body>
 </html>
