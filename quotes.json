@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-02T21:46:03.973524+00:00",
+ "generated_at": "2026-07-03T15:14:30.764042+00:00",
  "quotes": [
   {
    "ticker": "ABUS",
@@ -228,7 +228,7 @@
    "change_pct": 8.53,
    "prev_close": 2.58,
    "currency": "USD",
-   "market_time": 1783022258,
+   "market_time": 1783022400,
    "name": "Chilean Cobalt Corp."
   },
   {
@@ -268,7 +268,7 @@
    "change_pct": 0.0,
    "prev_close": 0.01,
    "currency": "USD",
-   "market_time": 1782936000,
+   "market_time": 1783022400,
    "name": "Ocean Thermal Energy Corp"
   },
   {
@@ -308,7 +308,7 @@
    "change_pct": 47.62,
    "prev_close": 0.02,
    "currency": "USD",
-   "market_time": 1782936000,
+   "market_time": 1783022400,
    "name": "Driveitaway Holdings, Inc."
   },
   {
@@ -338,7 +338,7 @@
    "change_pct": 0.0,
    "prev_close": 1.79,
    "currency": "USD",
-   "market_time": 1782936000,
+   "market_time": 1783022400,
    "name": "Esg Inc."
   },
   {
@@ -348,7 +348,7 @@
    "change_pct": 5.56,
    "prev_close": 0.18,
    "currency": "USD",
-   "market_time": 1782936000,
+   "market_time": 1783022400,
    "name": "Escalon Medical Corp"
   },
   {
@@ -438,17 +438,17 @@
    "change_pct": 0.0,
    "prev_close": 0.01,
    "currency": "USD",
-   "market_time": 1782936000,
+   "market_time": 1783022400,
    "name": "Good Gaming, Inc."
   },
   {
    "ticker": "GRTX",
    "price": 0.09,
-   "change": -0.0,
-   "change_pct": -0.0,
+   "change": 0.0,
+   "change_pct": 0.0,
    "prev_close": 0.09,
    "currency": "USD",
-   "market_time": 1783016793,
+   "market_time": 1783022400,
    "name": "Galera Therapeutics, Inc."
   },
   {
@@ -528,7 +528,7 @@
    "change_pct": 0.0,
    "prev_close": 0.02,
    "currency": "USD",
-   "market_time": 1783018952,
+   "market_time": 1783022400,
    "name": "Investview, Inc."
   },
   {
@@ -623,12 +623,12 @@
   },
   {
    "ticker": "NNUP",
-   "price": 1.7,
-   "change": 0.05,
-   "change_pct": 3.03,
+   "price": 1.63,
+   "change": -0.02,
+   "change_pct": -1.21,
    "prev_close": 1.65,
    "currency": "USD",
-   "market_time": 1783012656,
+   "market_time": 1783022400,
    "name": "Nocopi Technologies Inc/Md/"
   },
   {
@@ -728,7 +728,7 @@
    "change_pct": 0.92,
    "prev_close": 43.5,
    "currency": "USD",
-   "market_time": 1782936000,
+   "market_time": 1783022400,
    "name": "Qnb Corp."
   },
   {
@@ -738,17 +738,17 @@
    "change_pct": -4.99,
    "prev_close": 16.85,
    "currency": "USD",
-   "market_time": 1782936000,
+   "market_time": 1783022400,
    "name": "Quaint Oak Bancorp, Inc."
   },
   {
    "ticker": "QVCAQ",
-   "price": 0.08,
-   "change": -0.0,
-   "change_pct": -0.0,
+   "price": 0.11,
+   "change": 0.03,
+   "change_pct": 37.5,
    "prev_close": 0.08,
    "currency": "USD",
-   "market_time": 1783018986,
+   "market_time": 1783022400,
    "name": "Qvc Group, Inc."
   },
   {
@@ -778,7 +778,7 @@
    "change_pct": -1.59,
    "prev_close": 0.63,
    "currency": "USD",
-   "market_time": 1783022156,
+   "market_time": 1783022400,
    "name": "Rego Payment Architectures, Inc."
   },
   {
@@ -793,12 +793,12 @@
   },
   {
    "ticker": "SFES",
-   "price": 0.38,
-   "change": -0.03,
-   "change_pct": -7.32,
+   "price": 0.42,
+   "change": 0.01,
+   "change_pct": 2.44,
    "prev_close": 0.41,
    "currency": "USD",
-   "market_time": 1783007309,
+   "market_time": 1783022400,
    "name": "Safeguard Scientifics Inc"
   },
   {
@@ -813,12 +813,12 @@
   },
   {
    "ticker": "SSKN",
-   "price": 0.1,
-   "change": -0.03,
-   "change_pct": -23.08,
+   "price": 0.13,
+   "change": 0.0,
+   "change_pct": 0.0,
    "prev_close": 0.13,
    "currency": "USD",
-   "market_time": 1782936000,
+   "market_time": 1783022400,
    "name": "Strata Skin Sciences, Inc."
   },
   {
@@ -1023,12 +1023,12 @@
   },
   {
    "ticker": "WINT",
-   "price": 0.01,
-   "change": 0.0,
-   "change_pct": 0.0,
+   "price": 0.02,
+   "change": 0.01,
+   "change_pct": 100.0,
    "prev_close": 0.01,
    "currency": "USD",
-   "market_time": 1783006110,
+   "market_time": 1783022400,
    "name": "Windtree Therapeutics Inc /De/"
   },
   {
@@ -1038,7 +1038,7 @@
    "change_pct": 0.0,
    "prev_close": 2.49,
    "currency": "USD",
-   "market_time": 1782936000,
+   "market_time": 1783022400,
    "name": "Welsis Corp."
   },
   {
