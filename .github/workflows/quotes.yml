@@ -5,7 +5,7 @@ name: Refresh quotes
 # Roughly every 30 min during US market hours on weekdays (cron is UTC).
 on:
   schedule:
-    - cron: '*/30 13-21 * * 1-5'
+    - cron: '9,39 13-21 * * 1-5'
   workflow_dispatch:
 
 permissions:
