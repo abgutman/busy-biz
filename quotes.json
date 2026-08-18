@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-08-18T20:36:14.784885+00:00",
+ "generated_at": "2026-08-18T20:56:41.952846+00:00",
  "quotes": [
   {
    "ticker": "ABUS",
@@ -54,9 +54,9 @@
   {
    "ticker": "APRE",
    "price": 0.67,
-   "change": 0.01,
-   "change_pct": 1.52,
-   "prev_close": 0.66,
+   "change": -0.01,
+   "change_pct": -1.46,
+   "prev_close": 0.68,
    "currency": "USD",
    "market_time": 1787083200,
    "name": "Aprea Therapeutics, Inc."
@@ -74,9 +74,9 @@
   {
    "ticker": "AVBP",
    "price": 30.0,
-   "change": -1.39,
-   "change_pct": -4.43,
-   "prev_close": 31.39,
+   "change": -1.46,
+   "change_pct": -4.64,
+   "prev_close": 31.46,
    "currency": "USD",
    "market_time": 1787083201,
    "name": "Arrivent Biopharma, Inc."
@@ -84,9 +84,9 @@
   {
    "ticker": "AVTR",
    "price": 13.33,
-   "change": -0.44,
-   "change_pct": -3.2,
-   "prev_close": 13.77,
+   "change": -0.6,
+   "change_pct": -4.31,
+   "prev_close": 13.93,
    "currency": "USD",
    "market_time": 1787083203,
    "name": "Avantor, Inc."
@@ -94,9 +94,9 @@
   {
    "ticker": "AVTX",
    "price": 19.71,
-   "change": 0.24,
-   "change_pct": 1.23,
-   "prev_close": 19.47,
+   "change": 0.16,
+   "change_pct": 0.82,
+   "prev_close": 19.55,
    "currency": "USD",
    "market_time": 1787083201,
    "name": "Avalo Therapeutics, Inc."
@@ -144,9 +144,9 @@
   {
    "ticker": "BSY",
    "price": 34.64,
-   "change": -1.61,
-   "change_pct": -4.44,
-   "prev_close": 36.25,
+   "change": -1.09,
+   "change_pct": -3.05,
+   "prev_close": 35.73,
    "currency": "USD",
    "market_time": 1787083201,
    "name": "Bentley Systems"
@@ -164,9 +164,9 @@
   {
    "ticker": "BURL",
    "price": 336.95,
-   "change": -21.88,
-   "change_pct": -6.1,
-   "prev_close": 358.83,
+   "change": -16.68,
+   "change_pct": -4.72,
+   "prev_close": 353.63,
    "currency": "USD",
    "market_time": 1787083203,
    "name": "Burlington Stores"
@@ -174,9 +174,9 @@
   {
    "ticker": "BV",
    "price": 11.5,
-   "change": 0.2,
-   "change_pct": 1.77,
-   "prev_close": 11.3,
+   "change": -0.08,
+   "change_pct": -0.69,
+   "prev_close": 11.58,
    "currency": "USD",
    "market_time": 1787083203,
    "name": "Brightview Holdings, Inc."
@@ -184,9 +184,9 @@
   {
    "ticker": "CABA",
    "price": 2.91,
-   "change": 0.12,
-   "change_pct": 4.3,
-   "prev_close": 2.79,
+   "change": 0.06,
+   "change_pct": 2.11,
+   "prev_close": 2.85,
    "currency": "USD",
    "market_time": 1787083201,
    "name": "Cabaletta Bio, Inc."
@@ -215,7 +215,7 @@
    "ticker": "CNTX",
    "price": 0.5,
    "change": 0.03,
-   "change_pct": 6.44,
+   "change_pct": 6.38,
    "prev_close": 0.47,
    "currency": "USD",
    "market_time": 1787083201,
@@ -314,9 +314,9 @@
   {
    "ticker": "ECVT",
    "price": 10.31,
-   "change": 0.19,
-   "change_pct": 1.88,
-   "prev_close": 10.12,
+   "change": 0.38,
+   "change_pct": 3.83,
+   "prev_close": 9.93,
    "currency": "USD",
    "market_time": 1787083203,
    "name": "Ecovyst Inc."
@@ -324,9 +324,9 @@
   {
    "ticker": "EPAM",
    "price": 100.25,
-   "change": 0.35,
-   "change_pct": 0.35,
-   "prev_close": 99.9,
+   "change": -0.04,
+   "change_pct": -0.04,
+   "prev_close": 100.29,
    "currency": "USD",
    "market_time": 1787083203,
    "name": "Epam Systems, Inc."
@@ -364,9 +364,9 @@
   {
    "ticker": "FIVE",
    "price": 238.51,
-   "change": 4.27,
-   "change_pct": 1.82,
-   "prev_close": 234.24,
+   "change": 0.36,
+   "change_pct": 0.15,
+   "prev_close": 238.15,
    "currency": "USD",
    "market_time": 1787083200,
    "name": "Five Below"
@@ -384,9 +384,9 @@
   {
    "ticker": "FSCO",
    "price": 5.15,
-   "change": 0.11,
-   "change_pct": 2.18,
-   "prev_close": 5.04,
+   "change": 0.05,
+   "change_pct": 0.98,
+   "prev_close": 5.1,
    "currency": "USD",
    "market_time": 1787083202,
    "name": "Fs Credit Opportunities Corp."
@@ -394,9 +394,9 @@
   {
    "ticker": "FSK",
    "price": 11.91,
-   "change": -0.34,
-   "change_pct": -2.78,
-   "prev_close": 12.25,
+   "change": -0.26,
+   "change_pct": -2.14,
+   "prev_close": 12.17,
    "currency": "USD",
    "market_time": 1787083203,
    "name": "Fs Kkr Capital Corp"
@@ -414,9 +414,9 @@
   {
    "ticker": "GMED",
    "price": 86.44,
-   "change": 1.29,
-   "change_pct": 1.51,
-   "prev_close": 85.15,
+   "change": 0.77,
+   "change_pct": 0.9,
+   "prev_close": 85.67,
    "currency": "USD",
    "market_time": 1787083203,
    "name": "Globus Medical Inc"
@@ -454,9 +454,9 @@
   {
    "ticker": "HLNE",
    "price": 101.1,
-   "change": -3.74,
-   "change_pct": -3.57,
-   "prev_close": 104.84,
+   "change": -2.19,
+   "change_pct": -2.12,
+   "prev_close": 103.29,
    "currency": "USD",
    "market_time": 1787083201,
    "name": "Hamilton Lane Inc"
@@ -524,9 +524,9 @@
   {
    "ticker": "IPSC",
    "price": 1.96,
-   "change": -0.1,
-   "change_pct": -4.85,
-   "prev_close": 2.06,
+   "change": 0.0,
+   "change_pct": 0.0,
+   "prev_close": 1.96,
    "currency": "USD",
    "market_time": 1787083200,
    "name": "Century Therapeutics, Inc."
@@ -534,9 +534,9 @@
   {
    "ticker": "IRT",
    "price": 16.38,
-   "change": -0.27,
-   "change_pct": -1.62,
-   "prev_close": 16.65,
+   "change": -0.41,
+   "change_pct": -2.44,
+   "prev_close": 16.79,
    "currency": "USD",
    "market_time": 1787083203,
    "name": "Independence Realty Trust"
@@ -584,9 +584,9 @@
   {
    "ticker": "LRMR",
    "price": 4.06,
-   "change": -0.25,
-   "change_pct": -5.8,
-   "prev_close": 4.31,
+   "change": -0.31,
+   "change_pct": -7.09,
+   "prev_close": 4.37,
    "currency": "USD",
    "market_time": 1787083201,
    "name": "Larimar Therapeutics"
@@ -604,9 +604,9 @@
   {
    "ticker": "MRBK",
    "price": 20.02,
-   "change": 0.21,
-   "change_pct": 1.06,
-   "prev_close": 19.81,
+   "change": 0.11,
+   "change_pct": 0.55,
+   "prev_close": 19.91,
    "currency": "USD",
    "market_time": 1787083201,
    "name": "Meridian Corp"
@@ -644,9 +644,9 @@
   {
    "ticker": "OBIO",
    "price": 5.66,
-   "change": 1.26,
-   "change_pct": 28.64,
-   "prev_close": 4.4,
+   "change": 1.24,
+   "change_pct": 28.05,
+   "prev_close": 4.42,
    "currency": "USD",
    "market_time": 1787083200,
    "name": "Orchestra Biomed Holdings, Inc."
@@ -674,9 +674,9 @@
   {
    "ticker": "PASG",
    "price": 4.52,
-   "change": 0.02,
-   "change_pct": 0.44,
-   "prev_close": 4.5,
+   "change": -0.07,
+   "change_pct": -1.53,
+   "prev_close": 4.59,
    "currency": "USD",
    "market_time": 1787083200,
    "name": "Passage Bio"
@@ -704,9 +704,9 @@
   {
    "ticker": "PVLA",
    "price": 150.42,
-   "change": -3.88,
-   "change_pct": -2.51,
-   "prev_close": 154.3,
+   "change": -4.65,
+   "change_pct": -3.0,
+   "prev_close": 155.07,
    "currency": "USD",
    "market_time": 1787083200,
    "name": "Palvella Therapeutics, Inc."
@@ -864,9 +864,9 @@
   {
    "ticker": "TRAW",
    "price": 0.54,
-   "change": 0.0,
-   "change_pct": 0.0,
-   "prev_close": 0.54,
+   "change": 0.01,
+   "change_pct": 1.89,
+   "prev_close": 0.53,
    "currency": "USD",
    "market_time": 1787083201,
    "name": "Traws Pharma, Inc."
@@ -934,9 +934,9 @@
   {
    "ticker": "VERX",
    "price": 12.83,
-   "change": 0.6,
-   "change_pct": 4.91,
-   "prev_close": 12.23,
+   "change": 0.53,
+   "change_pct": 4.31,
+   "prev_close": 12.3,
    "currency": "USD",
    "market_time": 1787083200,
    "name": "Vertex, Inc."
@@ -964,9 +964,9 @@
   {
    "ticker": "VRCA",
    "price": 4.68,
-   "change": -0.54,
-   "change_pct": -10.34,
-   "prev_close": 5.22,
+   "change": -0.41,
+   "change_pct": -8.06,
+   "prev_close": 5.09,
    "currency": "USD",
    "market_time": 1787083200,
    "name": "Verrica Pharmaceuticals Inc."
@@ -984,9 +984,9 @@
   {
    "ticker": "VSNT",
    "price": 39.49,
-   "change": 2.73,
-   "change_pct": 7.43,
-   "prev_close": 36.76,
+   "change": 1.62,
+   "change_pct": 4.28,
+   "prev_close": 37.87,
    "currency": "USD",
    "market_time": 1787083200,
    "name": "Versant Media Group, Inc."
@@ -994,9 +994,9 @@
   {
    "ticker": "WHK",
    "price": 26.21,
-   "change": -0.25,
-   "change_pct": -0.94,
-   "prev_close": 26.46,
+   "change": 0.15,
+   "change_pct": 0.58,
+   "prev_close": 26.06,
    "currency": "USD",
    "market_time": 1787083202,
    "name": "Whitehawk Income Corp"
