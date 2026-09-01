@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-01T20:08:53.254923+00:00",
+ "generated_at": "2026-09-01T22:35:32.207102+00:00",
  "quotes": [
   {
    "ticker": "ABUS",
@@ -33,22 +33,22 @@
   },
   {
    "ticker": "AME",
-   "price": 231.34,
-   "change": -10.43,
-   "change_pct": -4.31,
+   "price": 231.32,
+   "change": -10.45,
+   "change_pct": -4.32,
    "prev_close": 241.77,
    "currency": "USD",
-   "market_time": 1788292795,
+   "market_time": 1788292802,
    "name": "Ametek"
   },
   {
    "ticker": "ANVS",
-   "price": 1.7,
-   "change": -0.12,
-   "change_pct": -6.59,
+   "price": 1.69,
+   "change": -0.13,
+   "change_pct": -7.14,
    "prev_close": 1.82,
    "currency": "USD",
-   "market_time": 1788292796,
+   "market_time": 1788292803,
    "name": "Annovis Bio, Inc."
   },
   {
@@ -58,17 +58,17 @@
    "change_pct": -11.58,
    "prev_close": 0.95,
    "currency": "USD",
-   "market_time": 1788292786,
+   "market_time": 1788292800,
    "name": "Aprea Therapeutics, Inc."
   },
   {
    "ticker": "ARMK",
-   "price": 56.63,
-   "change": -2.45,
-   "change_pct": -4.15,
+   "price": 56.62,
+   "change": -2.46,
+   "change_pct": -4.16,
    "prev_close": 59.08,
    "currency": "USD",
-   "market_time": 1788292799,
+   "market_time": 1788292803,
    "name": "Aramark"
   },
   {
@@ -83,12 +83,12 @@
   },
   {
    "ticker": "AVTR",
-   "price": 14.21,
-   "change": -0.21,
-   "change_pct": -1.46,
+   "price": 14.2,
+   "change": -0.22,
+   "change_pct": -1.53,
    "prev_close": 14.42,
    "currency": "USD",
-   "market_time": 1788292800,
+   "market_time": 1788292802,
    "name": "Avantor, Inc."
   },
   {
@@ -103,22 +103,22 @@
   },
   {
    "ticker": "AWK",
-   "price": 137.38,
-   "change": -0.22,
-   "change_pct": -0.16,
+   "price": 137.4,
+   "change": -0.2,
+   "change_pct": -0.15,
    "prev_close": 137.6,
    "currency": "USD",
-   "market_time": 1788292790,
+   "market_time": 1788292803,
    "name": "American Water Works"
   },
   {
    "ticker": "AXR",
-   "price": 23.05,
-   "change": 0.05,
-   "change_pct": 0.22,
+   "price": 22.91,
+   "change": -0.09,
+   "change_pct": -0.39,
    "prev_close": 23.0,
    "currency": "USD",
-   "market_time": 1788288993,
+   "market_time": 1788292803,
    "name": "Amrep Corp."
   },
   {
@@ -128,17 +128,17 @@
    "change_pct": -3.63,
    "prev_close": 36.4,
    "currency": "USD",
-   "market_time": 1788292800,
+   "market_time": 1788292803,
    "name": "Axalta Coating Systems"
   },
   {
    "ticker": "BDN",
-   "price": 3.0,
-   "change": -0.28,
-   "change_pct": -8.54,
+   "price": 2.99,
+   "change": -0.29,
+   "change_pct": -8.84,
    "prev_close": 3.28,
    "currency": "USD",
-   "market_time": 1788292799,
+   "market_time": 1788292803,
    "name": "Brandywine Realty Trust"
   },
   {
@@ -163,22 +163,22 @@
   },
   {
    "ticker": "BURL",
-   "price": 262.17,
-   "change": -53.1,
-   "change_pct": -16.84,
+   "price": 262.15,
+   "change": -53.12,
+   "change_pct": -16.85,
    "prev_close": 315.27,
    "currency": "USD",
-   "market_time": 1788292798,
+   "market_time": 1788292803,
    "name": "Burlington Stores"
   },
   {
    "ticker": "BV",
-   "price": 11.11,
-   "change": -0.04,
-   "change_pct": -0.36,
+   "price": 11.1,
+   "change": -0.05,
+   "change_pct": -0.45,
    "prev_close": 11.15,
    "currency": "USD",
-   "market_time": 1788292796,
+   "market_time": 1788292803,
    "name": "Brightview Holdings, Inc."
   },
   {
@@ -233,22 +233,22 @@
   },
   {
    "ticker": "COHN",
-   "price": 11.1,
-   "change": -0.05,
-   "change_pct": -0.45,
+   "price": 11.23,
+   "change": 0.08,
+   "change_pct": 0.72,
    "prev_close": 11.15,
    "currency": "USD",
-   "market_time": 1788292010,
+   "market_time": 1788292800,
    "name": "Cohen & Co Inc."
   },
   {
    "ticker": "COR",
-   "price": 330.99,
-   "change": 2.93,
+   "price": 330.97,
+   "change": 2.91,
    "change_pct": 0.89,
    "prev_close": 328.06,
    "currency": "USD",
-   "market_time": 1788292799,
+   "market_time": 1788292803,
    "name": "Cencora (Amerisourcebergen)"
   },
   {
@@ -273,12 +273,12 @@
   },
   {
    "ticker": "CRS",
-   "price": 473.12,
-   "change": -12.97,
-   "change_pct": -2.67,
+   "price": 473.06,
+   "change": -13.03,
+   "change_pct": -2.68,
    "prev_close": 486.09,
    "currency": "USD",
-   "market_time": 1788292797,
+   "market_time": 1788292803,
    "name": "Carpenter Technology Corp"
   },
   {
@@ -288,7 +288,7 @@
    "change_pct": -2.19,
    "prev_close": 40.62,
    "currency": "USD",
-   "market_time": 1788292798,
+   "market_time": 1788292942,
    "name": "Cubesmart"
   },
   {
@@ -308,17 +308,17 @@
    "change_pct": -0.3,
    "prev_close": 10.13,
    "currency": "USD",
-   "market_time": 1788292799,
+   "market_time": 1788292803,
    "name": "Ecovyst Inc."
   },
   {
    "ticker": "EPAM",
-   "price": 116.39,
-   "change": 4.54,
-   "change_pct": 4.06,
+   "price": 116.34,
+   "change": 4.49,
+   "change_pct": 4.01,
    "prev_close": 111.85,
    "currency": "USD",
-   "market_time": 1788292795,
+   "market_time": 1788292802,
    "name": "Epam Systems, Inc."
   },
   {
@@ -363,32 +363,32 @@
   },
   {
    "ticker": "FMC",
-   "price": 11.87,
-   "change": 0.7,
-   "change_pct": 6.27,
+   "price": 11.88,
+   "change": 0.71,
+   "change_pct": 6.36,
    "prev_close": 11.17,
    "currency": "USD",
-   "market_time": 1788292798,
+   "market_time": 1788292803,
    "name": "Fmc Corporation"
   },
   {
    "ticker": "FSCO",
-   "price": 5.2,
+   "price": 5.19,
    "change": 0.12,
    "change_pct": 2.37,
    "prev_close": 5.07,
    "currency": "USD",
-   "market_time": 1788292798,
+   "market_time": 1788292802,
    "name": "Fs Credit Opportunities Corp."
   },
   {
    "ticker": "FSK",
    "price": 12.27,
-   "change": 0.21,
-   "change_pct": 1.74,
+   "change": 0.22,
+   "change_pct": 1.83,
    "prev_close": 12.05,
    "currency": "USD",
-   "market_time": 1788292798,
+   "market_time": 1788292803,
    "name": "Fs Kkr Capital Corp"
   },
   {
@@ -408,7 +408,7 @@
    "change_pct": -2.99,
    "prev_close": 82.96,
    "currency": "USD",
-   "market_time": 1788292799,
+   "market_time": 1788292803,
    "name": "Globus Medical Inc"
   },
   {
@@ -453,22 +453,22 @@
   },
   {
    "ticker": "HQH",
-   "price": 22.65,
-   "change": -0.96,
-   "change_pct": -4.07,
+   "price": 22.64,
+   "change": -0.97,
+   "change_pct": -4.11,
    "prev_close": 23.61,
    "currency": "USD",
-   "market_time": 1788292775,
+   "market_time": 1788292803,
    "name": "Abrdn Healthcare Investors"
   },
   {
    "ticker": "HQL",
-   "price": 20.85,
-   "change": -0.82,
-   "change_pct": -3.78,
+   "price": 20.87,
+   "change": -0.8,
+   "change_pct": -3.69,
    "prev_close": 21.67,
    "currency": "USD",
-   "market_time": 1788292799,
+   "market_time": 1788292802,
    "name": "Abrdn Life Sciences Investors"
   },
   {
@@ -523,12 +523,12 @@
   },
   {
    "ticker": "IRT",
-   "price": 16.26,
-   "change": -0.43,
-   "change_pct": -2.58,
+   "price": 16.27,
+   "change": -0.42,
+   "change_pct": -2.52,
    "prev_close": 16.69,
    "currency": "USD",
-   "market_time": 1788292797,
+   "market_time": 1788292803,
    "name": "Independence Realty Trust"
   },
   {
@@ -553,22 +553,22 @@
   },
   {
    "ticker": "KWR",
-   "price": 162.21,
-   "change": -2.53,
+   "price": 162.2,
+   "change": -2.54,
    "change_pct": -1.54,
    "prev_close": 164.74,
    "currency": "USD",
-   "market_time": 1788292798,
+   "market_time": 1788292802,
    "name": "Quaker Chemical Corp"
   },
   {
    "ticker": "LNC",
-   "price": 42.76,
-   "change": 0.15,
-   "change_pct": 0.35,
+   "price": 42.77,
+   "change": 0.16,
+   "change_pct": 0.38,
    "prev_close": 42.61,
    "currency": "USD",
-   "market_time": 1788292797,
+   "market_time": 1788292802,
    "name": "Lincoln National Corp"
   },
   {
@@ -613,12 +613,12 @@
   },
   {
    "ticker": "NVRI",
-   "price": 22.02,
-   "change": 0.4,
-   "change_pct": 1.85,
+   "price": 22.01,
+   "change": 0.39,
+   "change_pct": 1.8,
    "prev_close": 21.62,
    "currency": "USD",
-   "market_time": 1788292798,
+   "market_time": 1788292803,
    "name": "Enviri Corp"
   },
   {
@@ -663,12 +663,12 @@
   },
   {
    "ticker": "PASG",
-   "price": 4.4,
-   "change": -0.43,
-   "change_pct": -8.9,
+   "price": 4.44,
+   "change": -0.39,
+   "change_pct": -8.07,
    "prev_close": 4.83,
    "currency": "USD",
-   "market_time": 1788288007,
+   "market_time": 1788292800,
    "name": "Passage Bio"
   },
   {
@@ -743,12 +743,12 @@
   },
   {
    "ticker": "RDN",
-   "price": 35.81,
-   "change": -1.02,
-   "change_pct": -2.77,
+   "price": 35.8,
+   "change": -1.03,
+   "change_pct": -2.8,
    "prev_close": 36.83,
    "currency": "USD",
-   "market_time": 1788292795,
+   "market_time": 1788292802,
    "name": "Radian Group"
   },
   {
@@ -823,32 +823,32 @@
   },
   {
    "ticker": "TFX",
-   "price": 140.62,
-   "change": 0.44,
-   "change_pct": 0.31,
+   "price": 140.48,
+   "change": 0.3,
+   "change_pct": 0.21,
    "prev_close": 140.18,
    "currency": "USD",
-   "market_time": 1788292789,
+   "market_time": 1788292802,
    "name": "Teleflex Inc"
   },
   {
    "ticker": "TOL",
-   "price": 140.18,
-   "change": -10.65,
-   "change_pct": -7.06,
+   "price": 140.21,
+   "change": -10.62,
+   "change_pct": -7.04,
    "prev_close": 150.83,
    "currency": "USD",
-   "market_time": 1788292794,
+   "market_time": 1788292986,
    "name": "Toll Brothers"
   },
   {
    "ticker": "TOPP",
-   "price": 0.16,
-   "change": -0.05,
-   "change_pct": -23.58,
+   "price": 0.17,
+   "change": -0.04,
+   "change_pct": -18.87,
    "prev_close": 0.21,
    "currency": "USD",
-   "market_time": 1788292647,
+   "market_time": 1788292800,
    "name": "Toppoint Holdings Inc."
   },
   {
@@ -858,47 +858,47 @@
    "change_pct": 1.72,
    "prev_close": 0.58,
    "currency": "USD",
-   "market_time": 1788292790,
+   "market_time": 1788292800,
    "name": "Traws Pharma, Inc."
   },
   {
    "ticker": "UGI",
-   "price": 38.46,
-   "change": 0.11,
-   "change_pct": 0.29,
+   "price": 38.44,
+   "change": 0.09,
+   "change_pct": 0.23,
    "prev_close": 38.35,
    "currency": "USD",
-   "market_time": 1788292797,
+   "market_time": 1788292803,
    "name": "Ugi Corporation"
   },
   {
    "ticker": "UHS",
-   "price": 170.81,
-   "change": -4.94,
-   "change_pct": -2.81,
+   "price": 170.75,
+   "change": -5.01,
+   "change_pct": -2.85,
    "prev_close": 175.76,
    "currency": "USD",
-   "market_time": 1788292797,
+   "market_time": 1788292802,
    "name": "Universal Health Services"
   },
   {
    "ticker": "UHT",
-   "price": 41.24,
-   "change": -0.9,
-   "change_pct": -2.14,
+   "price": 41.11,
+   "change": -1.03,
+   "change_pct": -2.44,
    "prev_close": 42.14,
    "currency": "USD",
-   "market_time": 1788292788,
+   "market_time": 1788292802,
    "name": "Universal Health Realty Income Trust"
   },
   {
    "ticker": "UIS",
-   "price": 2.58,
-   "change": -0.11,
-   "change_pct": -4.09,
+   "price": 2.59,
+   "change": -0.1,
+   "change_pct": -3.72,
    "prev_close": 2.69,
    "currency": "USD",
-   "market_time": 1788292799,
+   "market_time": 1788292803,
    "name": "Unisys"
   },
   {
@@ -943,12 +943,12 @@
   },
   {
    "ticker": "VPG",
-   "price": 60.42,
-   "change": -4.03,
-   "change_pct": -6.25,
+   "price": 60.45,
+   "change": -4.0,
+   "change_pct": -6.21,
    "prev_close": 64.45,
    "currency": "USD",
-   "market_time": 1788292797,
+   "market_time": 1788292922,
    "name": "Vishay Precision Group, Inc."
   },
   {
@@ -968,7 +968,7 @@
    "change_pct": -5.37,
    "prev_close": 31.31,
    "currency": "USD",
-   "market_time": 1788292798,
+   "market_time": 1788292940,
    "name": "Vishay Intertechnology"
   },
   {
@@ -983,12 +983,12 @@
   },
   {
    "ticker": "WHK",
-   "price": 27.65,
-   "change": 0.96,
-   "change_pct": 3.6,
+   "price": 27.55,
+   "change": 0.86,
+   "change_pct": 3.22,
    "prev_close": 26.69,
    "currency": "USD",
-   "market_time": 1788292797,
+   "market_time": 1788292802,
    "name": "Whitehawk Income Corp"
   },
   {
@@ -1013,12 +1013,12 @@
   },
   {
    "ticker": "WST",
-   "price": 338.67,
-   "change": -9.81,
+   "price": 338.65,
+   "change": -9.83,
    "change_pct": -2.82,
    "prev_close": 348.48,
    "currency": "USD",
-   "market_time": 1788292794,
+   "market_time": 1788292924,
    "name": "West Pharmaceutical Services Inc"
   },
   {
@@ -1028,7 +1028,7 @@
    "change_pct": 0.86,
    "prev_close": 40.76,
    "currency": "USD",
-   "market_time": 1788292791,
+   "market_time": 1788292803,
    "name": "Essential Utilities (Aqua)"
   },
   {
