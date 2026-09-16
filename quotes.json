@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-16T20:24:56.748995+00:00",
+ "generated_at": "2026-09-16T23:13:40.797345+00:00",
  "quotes": [
   {
    "ticker": "ABUS",
@@ -263,12 +263,12 @@
   },
   {
    "ticker": "CPWR",
-   "price": 0.0,
-   "change": -0.0,
-   "change_pct": -0.0,
+   "price": 0.01,
+   "change": 0.0,
+   "change_pct": 0.0,
    "prev_close": 0.01,
    "currency": "USD",
-   "market_time": 1789585940,
+   "market_time": 1789502400,
    "name": "Ocean Thermal Energy Corp"
   },
   {
