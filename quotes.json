@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-14T21:36:31.267849+00:00",
+ "generated_at": "2026-10-15T00:04:50.180738+00:00",
  "quotes": [
   {
    "ticker": "ABUS",
@@ -348,7 +348,7 @@
    "change_pct": 6.25,
    "prev_close": 0.16,
    "currency": "USD",
-   "market_time": 1791993897,
+   "market_time": 1791993896,
    "name": "Escalon Medical Corp"
   },
   {
@@ -423,12 +423,12 @@
   },
   {
    "ticker": "GMER",
-   "price": 0.0,
+   "price": 0.01,
    "change": 0.0,
    "change_pct": 0.0,
    "prev_close": 0.0,
    "currency": "USD",
-   "market_time": 1791921600,
+   "market_time": 1791985486,
    "name": "Good Gaming, Inc."
   },
   {
@@ -504,11 +504,11 @@
   {
    "ticker": "INVU",
    "price": 0.02,
-   "change": 0.0,
-   "change_pct": 0.0,
+   "change": -0.0,
+   "change_pct": -0.0,
    "prev_close": 0.02,
    "currency": "USD",
-   "market_time": 1791921600,
+   "market_time": 1791997156,
    "name": "Investview, Inc."
   },
   {
@@ -538,7 +538,7 @@
    "change_pct": 7.74,
    "prev_close": 23.0,
    "currency": "USD",
-   "market_time": 1786996800,
+   "market_time": 1792008000,
    "name": "Innovative Solutions & Support Inc"
   },
   {
