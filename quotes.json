@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-20T21:33:01.590949+00:00",
+ "generated_at": "2026-10-21T00:06:37.175922+00:00",
  "quotes": [
   {
    "ticker": "ABUS",
@@ -223,12 +223,12 @@
   },
   {
    "ticker": "COBA",
-   "price": 2.2,
-   "change": -0.1,
-   "change_pct": -4.35,
+   "price": 2.3,
+   "change": 0.0,
+   "change_pct": 0.0,
    "prev_close": 2.3,
    "currency": "USD",
-   "market_time": 1792525869,
+   "market_time": 1792440000,
    "name": "Chilean Cobalt Corp."
   },
   {
@@ -304,11 +304,11 @@
   {
    "ticker": "DWAY",
    "price": 0.01,
-   "change": -0.01,
-   "change_pct": -83.33,
+   "change": -0.0,
+   "change_pct": -0.0,
    "prev_close": 0.01,
    "currency": "USD",
-   "market_time": 1792523355,
+   "market_time": 1792440000,
    "name": "Driveitaway Holdings, Inc."
   },
   {
@@ -503,12 +503,12 @@
   },
   {
    "ticker": "INVU",
-   "price": 0.01,
+   "price": 0.02,
    "change": -0.0,
    "change_pct": -0.0,
    "prev_close": 0.02,
    "currency": "USD",
-   "market_time": 1792524608,
+   "market_time": 1792440000,
    "name": "Investview, Inc."
   },
   {
