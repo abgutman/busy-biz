@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-21T21:35:15.452081+00:00",
+ "generated_at": "2026-10-22T00:10:27.555553+00:00",
  "quotes": [
   {
    "ticker": "ABUS",
@@ -223,12 +223,12 @@
   },
   {
    "ticker": "COBA",
-   "price": 2.09,
-   "change": -0.21,
-   "change_pct": -9.13,
+   "price": 2.2,
+   "change": -0.1,
+   "change_pct": -4.35,
    "prev_close": 2.3,
    "currency": "USD",
-   "market_time": 1792609990,
+   "market_time": 1792526400,
    "name": "Chilean Cobalt Corp."
   },
   {
@@ -268,7 +268,7 @@
    "change_pct": -0.0,
    "prev_close": 0.0,
    "currency": "USD",
-   "market_time": 1792610740,
+   "market_time": 1792526400,
    "name": "Ocean Thermal Energy Corp"
   },
   {
@@ -308,7 +308,7 @@
    "change_pct": -0.0,
    "prev_close": 0.01,
    "currency": "USD",
-   "market_time": 1792609590,
+   "market_time": 1792526400,
    "name": "Driveitaway Holdings, Inc."
   },
   {
@@ -333,12 +333,12 @@
   },
   {
    "ticker": "ESGH",
-   "price": 3.0,
-   "change": 2.15,
-   "change_pct": 252.94,
+   "price": 2.25,
+   "change": 1.4,
+   "change_pct": 164.71,
    "prev_close": 0.85,
    "currency": "USD",
-   "market_time": 1792612131,
+   "market_time": 1792526400,
    "name": "Esg Inc."
   },
   {
