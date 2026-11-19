@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-18T21:21:28.199807+00:00",
+ "generated_at": "2026-11-19T02:47:17.032203+00:00",
  "quotes": [
   {
    "ticker": "ABUS",
@@ -504,11 +504,11 @@
   {
    "ticker": "INVU",
    "price": 0.02,
-   "change": -0.0,
-   "change_pct": -0.0,
+   "change": 0.0,
+   "change_pct": 0.0,
    "prev_close": 0.02,
    "currency": "USD",
-   "market_time": 1795035002,
+   "market_time": 1794949200,
    "name": "Investview, Inc."
   },
   {
