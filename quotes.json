@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-25T22:27:28.126792+00:00",
+ "generated_at": "2026-11-26T22:15:43.028477+00:00",
  "quotes": [
   {
    "ticker": "ABUS",
@@ -223,12 +223,12 @@
   },
   {
    "ticker": "COBA",
-   "price": 2.12,
-   "change": 0.06,
-   "change_pct": 2.91,
+   "price": 1.8,
+   "change": -0.26,
+   "change_pct": -12.62,
    "prev_close": 2.06,
    "currency": "USD",
-   "market_time": 1795554000,
+   "market_time": 1795640400,
    "name": "Chilean Cobalt Corp."
   },
   {
@@ -268,7 +268,7 @@
    "change_pct": 0.0,
    "prev_close": 0.0,
    "currency": "USD",
-   "market_time": 1795554000,
+   "market_time": 1795640400,
    "name": "Ocean Thermal Energy Corp"
   },
   {
@@ -308,7 +308,7 @@
    "change_pct": 0.0,
    "prev_close": 0.01,
    "currency": "USD",
-   "market_time": 1795554000,
+   "market_time": 1795640400,
    "name": "Driveitaway Holdings, Inc."
   },
   {
@@ -338,7 +338,7 @@
    "change_pct": -34.69,
    "prev_close": 4.9,
    "currency": "USD",
-   "market_time": 1795627616,
+   "market_time": 1795640400,
    "name": "Esg Inc."
   },
   {
@@ -348,7 +348,7 @@
    "change_pct": 15.79,
    "prev_close": 0.19,
    "currency": "USD",
-   "market_time": 1795554000,
+   "market_time": 1795640400,
    "name": "Escalon Medical Corp"
   },
   {
@@ -428,7 +428,7 @@
    "change_pct": 0.0,
    "prev_close": 0.0,
    "currency": "USD",
-   "market_time": 1795554000,
+   "market_time": 1795640400,
    "name": "Good Gaming, Inc."
   },
   {
@@ -508,7 +508,7 @@
    "change_pct": -0.0,
    "prev_close": 0.02,
    "currency": "USD",
-   "market_time": 1795637638,
+   "market_time": 1795640400,
    "name": "Investview, Inc."
   },
   {
@@ -608,7 +608,7 @@
    "change_pct": 1.61,
    "prev_close": 1.86,
    "currency": "USD",
-   "market_time": 1795554000,
+   "market_time": 1795640400,
    "name": "Nocopi Technologies Inc/Md/"
   },
   {
@@ -664,9 +664,9 @@
   {
    "ticker": "PASG",
    "price": 3.71,
-   "change": -0.42,
-   "change_pct": -10.16,
-   "prev_close": 4.13,
+   "change": -21.09,
+   "change_pct": -85.01,
+   "prev_close": 24.81,
    "currency": "USD",
    "market_time": 1795554000,
    "name": "Passage Bio"
@@ -718,7 +718,7 @@
    "change_pct": 0.0,
    "prev_close": 15.28,
    "currency": "USD",
-   "market_time": 1795554000,
+   "market_time": 1795640400,
    "name": "Quaint Oak Bancorp, Inc."
   },
   {
@@ -758,7 +758,7 @@
    "change_pct": -4.8,
    "prev_close": 0.42,
    "currency": "USD",
-   "market_time": 1795639837,
+   "market_time": 1795640400,
    "name": "Rego Payment Architectures, Inc."
   },
   {
@@ -773,12 +773,12 @@
   },
   {
    "ticker": "SFES",
-   "price": 0.6,
-   "change": 0.0,
-   "change_pct": 0.0,
+   "price": 0.65,
+   "change": 0.05,
+   "change_pct": 8.33,
    "prev_close": 0.6,
    "currency": "USD",
-   "market_time": 1795638352,
+   "market_time": 1795640400,
    "name": "Safeguard Scientifics Inc"
   },
   {
@@ -798,7 +798,7 @@
    "change_pct": 0.0,
    "prev_close": 0.0,
    "currency": "USD",
-   "market_time": 1795554000,
+   "market_time": 1795640400,
    "name": "Strata Skin Sciences, Inc."
   },
   {
@@ -998,7 +998,7 @@
    "change_pct": 0.0,
    "prev_close": 0.0,
    "currency": "USD",
-   "market_time": 1795554000,
+   "market_time": 1795640400,
    "name": "Windtree Therapeutics Inc /De/"
   },
   {
@@ -1008,7 +1008,7 @@
    "change_pct": 0.0,
    "prev_close": 0.6,
    "currency": "USD",
-   "market_time": 1795554000,
+   "market_time": 1795640400,
    "name": "Welsis Corp."
   },
   {
